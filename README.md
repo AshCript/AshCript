@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on all kind of Machine Learning projects
 - 📫 How to reach me : 
     #### e-mail : asjosvah@gmail.com
-    #### Facebook : [As Josvah](https://www.facebook.com/as.josvah/)
+    #### Facebook : [As Josvah](https://www.facebook.com/asmanjaka.josvah/)
     #### Contact : +261 34 12 696 37
 
 <!---
