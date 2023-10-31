@@ -10,9 +10,9 @@
 <br/>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/mgcodeur/mgcodeur/blob/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mgcodeur/mgcodeur/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/mgcodeur/mgcodeur/output/github-contribution-grid-snake.svg" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AshCript/AshCript/blob/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AshCript/AshCript/output/github-contribution-grid-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/AshCript/AshCript/output/github-contribution-grid-snake.svg" width="100%"/>
 </picture>
 
 <br/>
@@ -42,7 +42,7 @@
     <br/>
     <br/>
     <div>
-        <img src="https://github-profile-trophy.vercel.app/?username=mgcodeur&theme=onedark&no-frame=false&no-bg=true&margin-w=4" alt="Mgcodeur Github Trophies" width="100%"/>
+        <img src="https://github-profile-trophy.vercel.app/?username=AshCript&theme=onedark&no-frame=false&no-bg=true&margin-w=4" alt="AshCript Github Trophies" width="100%"/>
     </div>
 </details>
 
@@ -59,9 +59,9 @@
     <div align="center">
         <a href="#">
             <picture>
-                <source media="(prefers-color-scheme: dark)" srcset="https://github.com/mgcodeur/mgcodeur/blob/master/profile-3d-contrib/profile-night-rainbow.svg" />
-                <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mgcodeur/mgcodeur/master/profile-3d-contrib/profile-south-season-animate.svg" />
-                <img alt="mgcodeur-github-stat" src="https://raw.githubusercontent.com/mgcodeur/mgcodeur/master/profile-3d-contrib/profile-south-season-animate.svg" width="100%"/>
+                <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AshCript/AshCript/blob/master/profile-3d-contrib/profile-night-rainbow.svg" />
+                <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" />
+                <img alt="AshCript-github-stat" src="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" width="100%"/>
             </picture>
         </a>
     </div>
@@ -79,7 +79,7 @@
     <br/>
     <div align="center">
         <a href="#">
-            <img src="https://github-graph.herokuapp.com/graph?username=mgcodeur&hide_border=true&radius=15&theme=github-compact&line=FF5F5F&color=3572A5&point=3572A5"/>
+            <img src="https://github-graph.herokuapp.com/graph?username=AshCript&hide_border=true&radius=15&theme=github-compact&line=FF5F5F&color=3572A5&point=3572A5"/>
         </a>
     </div>
 </details>
@@ -95,67 +95,67 @@
     <br/>
     <br/>
     <div>
-        <a href="https://twitter.com/mgcodeur">
+        <a href="https://twitter.com/AshCript">
             <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
         </a>
-        <a href="https://www.linkedin.com/in/mgcodeur">
+        <a href="https://www.linkedin.com/in/AshCript">
             <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
         </a>
-        <a href="https://www.instagram.com/mgcodeur">
+        <a href="https://www.instagram.com/AshCript">
             <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
         </a>
-        <a href="https://www.facebook.com/mgcodeur">
+        <a href="https://www.facebook.com/AshCript">
             <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>
         </a>
-        <a href="https://www.youtube.com/@mgcodeur">
+        <a href="https://www.youtube.com/@AshCript">
             <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
         </a>
-        <a href="https://www.twitch.tv/mgcodeur">
+        <a href="https://www.twitch.tv/AshCript">
             <img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white"/>
         </a>
-        <a href="https://www.reddit.com/user/mgcodeur">
+        <a href="https://www.reddit.com/user/AshCript">
             <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white"/>
         </a>
-        <a href="https://www.pinterest.com/mgcodeur">
+        <a href="https://www.pinterest.com/AshCript">
             <img src="https://img.shields.io/badge/Pinterest-FF0000?style=for-the-badge&logo=pinterest&logoColor=white"/>
         </a>
-        <a href="https://www.dev.to/mgcodeur">
+        <a href="https://www.dev.to/AshCript">
             <img src="https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white"/>
         </a>
-        <a href="https://www.codepen.io/mgcodeur">
+        <a href="https://www.codepen.io/AshCript">
             <img src="https://img.shields.io/badge/CodePen-000000?style=for-the-badge&logo=codepen&logoColor=white"/>
         </a> 
-        <a href="https://www.behance.net/mgcodeur">
+        <a href="https://www.behance.net/AshCript">
             <img src="https://img.shields.io/badge/Behance-1769FF?style=for-the-badge&logo=behance&logoColor=white"/>   
         </a>
-        <a href="https://www.medium.com/@mgcodeur">
+        <a href="https://www.medium.com/@AshCript">
             <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"/> 
         </a>
-        <a href="https://www.quora.com/profile/Mgcodeur">
+        <a href="https://www.quora.com/profile/AshCript">
             <img src="https://img.shields.io/badge/Quora-B92B27?style=for-the-badge&logo=quora&logoColor=white"/>
         </a>
-        <a href="https://stackoverflow.com/users/17922926/mgcodeur">
+        <a href="https://stackoverflow.com/users/17922926/AshCript">
             <img src="https://img.shields.io/badge/StackOverflow-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white"/>
         </a>
-        <a href="https://www.producthunt.com/@mgcodeur">
+        <a href="https://www.producthunt.com/@AshCript">
             <img src="https://img.shields.io/badge/ProductHunt-DA552F?style=for-the-badge&logo=producthunt&logoColor=white"/>
         </a>
-        <a href="https://www.hackerrank.com/mgcodeur">
+        <a href="https://www.hackerrank.com/AshCript">
             <img src="https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white"/>
         </a>
-        <a href="https://www.codewars.com/users/mgcodeur">
+        <a href="https://www.codewars.com/users/AshCript">
             <img src="https://img.shields.io/badge/CodeWars-000000?style=for-the-badge&logo=codewars&logoColor=white"/>
         </a>
-        <a href="https://www.codechef.com/users/mgcodeur">
+        <a href="https://www.codechef.com/users/AshCript">
             <img src="https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white"/>
         </a>
-        <a href="https://www.freecodecamp.org/mgcodeur">
+        <a href="https://www.freecodecamp.org/AshCript">
             <img src="https://img.shields.io/badge/FreeCodeCamp-0A0A23?style=for-the-badge&logo=freecodecamp&logoColor=white"/>
         </a>
-        <a href="https://www.codecademy.com/profiles/mgcodeur">
+        <a href="https://www.codecademy.com/profiles/AshCript">
             <img src="https://img.shields.io/badge/Codecademy-1F4056?style=for-the-badge&logo=codecademy&logoColor=white"/>
         </a>
-        <a href="https://www.kaggle.com/mgcodeur">
+        <a href="https://www.kaggle.com/AshCript">
             <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/>
         </a>
         <a href="#">
@@ -164,7 +164,7 @@
         <a href="#">
             <img src="https://img.shields.io/badge/Coursera-2A73CC?style=for-the-badge&logo=coursera&logoColor=white"/> 
         </a>
-        <a href="https://www.udemy.com/user/mgcodeur/">
+        <a href="https://www.udemy.com/user/AshCript/">
             <img src="https://img.shields.io/badge/Udemy-EC5252?style=for-the-badge&logo=udemy&logoColor=white"/>
         </a>
         <a href="#">
@@ -176,11 +176,11 @@
 <br>
 
 <div>
-    <a href="https://buymeacoffee.com/mgcodeur">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=mgcodeur&button_colour=FF5F5F&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
+    <a href="https://buymeacoffee.com/AshCript">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=AshCript&button_colour=FF5F5F&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
     </a>
 </div>
 
 <div>
-    <img src="https://visitcount.itsvg.in/api?id=mgcodeur&icon=0&color=1"/>
+    <img src="https://visitcount.itsvg.in/api?id=AshCript&icon=0&color=1"/>
 </div>
