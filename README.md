@@ -61,7 +61,7 @@
             <picture>
                 <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AshCript/AshCript/blob/master/profile-3d-contrib/profile-night-rainbow.svg" />
                 <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" />
-                <img alt="AshCript-github-stat" src="https://raw.githubusercontent.com/AshCript/AshCript/output/github-contribution-grid-snake-dark.svg?palette=github-dark" width="100%"/>
+                <img alt="AshCript-github-stat" src="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" width="100%"/>
             </picture>
         </a>
     </div>
