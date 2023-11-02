@@ -57,13 +57,17 @@
     <br/>
     <br/>
     <div align="center">
+        <a href="#">
             <picture>
-                <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AshCript/AshCript/blob/master/profile-3d-contrib/profile-night-rainbow.svg" />
+                <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AshCript/AshCript/blob/main/profile-3d-contrib/profile-night-rainbow.svg" />
                 <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" />
                 <img alt="AshCript-github-stat" src="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" width="100%"/>
             </picture>
+        </a>
     </div>
 </details>
+
+
 
 <br/>
 
