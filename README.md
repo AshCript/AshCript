@@ -178,8 +178,8 @@
 <br>
 
 <div>
-    <a href="https://buymeacoffee.com/AshCript">
-        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=AshCript&button_colour=FF5F5F&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"/>
+    <a href="https://www.buymeacoffee.com/asjosvah">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=asjosvah&button_colour=45d8d8&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00&count=100"/>
     </a>
 </div>
 
