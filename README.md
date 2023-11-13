@@ -1,5 +1,8 @@
 <h3 align="center">
     <div>
+        <div align="center">
+            <img align=center src="https://camo.githubusercontent.com/ffbf71edb9eb65671926a8cc42a5a740bf5b799a9b93699a3a0de76e1793a80b/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f54456e586b637348725034596564436868412f67697068792e676966" width=150px/>
+        </div>
         <img src="assets/animated-flame-01.gif" height="50" align="left" width="1.75%"/>
         <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=500&color=999999&center=true&vCenter=true&width=600&lines=Hello%F0%9F%91%8B%2C+I'm+AshCript;I'm+a+Fullstack+Developer%F0%9F%94%A5;Nice+To+Meet+You%F0%9F%98%8C%E2%9C%A8;Thanks+for+visiting+my+account😊." alt="Typing SVG" align="center" width="90%"/>
         <img src="assets/animated-flame-01.gif" height="50" align="right" width="1.75%"/>
