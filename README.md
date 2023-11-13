@@ -87,7 +87,10 @@
 </details>
 
 <br/>
-
+<div align="center">
+    <img src="https://github-readme-stats.vercel.app/api?username=AshCript&show_icons=true&theme=dark&locale=en" alt="h-fares" align=center/>
+        <img src="https://camo.githubusercontent.com/14a8f991cf62d5ae4d458b688752d171303b1cabad59c5b9c17e13e2e01d3846/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6a75756139693263326641304149703269712f67697068792e676966" alt="ordi" width="250px"/>
+    </div>
 <details open>
     <summary>
         <b>📫 Contact.</b>
