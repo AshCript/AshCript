@@ -8,7 +8,7 @@ import hashlib
 
 # Personal access token with permissions: read:enterprise, read:org, read:repo_hook, read:user, repo
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-USER_NAME = os.environ['USER_NAME'] # 'AshCript'
+USER_NAME = os.environ['USER_NAME'] # 'Andrew6rant'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
@@ -47,60 +47,60 @@ def simple_request(func_name, query, variables):
     raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
 
 
-#def graph_commits(start_date, end_date):
-#    """
-#    Uses GitHub's GraphQL v4 API to return my total commit count
-#    """
-#    query_count('graph_commits')
-#    query = '''
-#    query($start_date: DateTime!, $end_date: DateTime!, $login: String!) {
-#        user(login: $login) {
-#            contributionsCollection(from: $start_date, to: $end_date) {
-#                contributionCalendar {
-#                    totalContributions
-#                }
-#            }
-#        }
-#    }'''
-#    variables = {'start_date': start_date,'end_date': end_date, 'login': USER_NAME}
-#    request = simple_request(graph_commits.__name__, query, variables)
-#    return int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
+def graph_commits(start_date, end_date):
+    """
+    Uses GitHub's GraphQL v4 API to return my total commit count
+    """
+    query_count('graph_commits')
+    query = '''
+    query($start_date: DateTime!, $end_date: DateTime!, $login: String!) {
+        user(login: $login) {
+            contributionsCollection(from: $start_date, to: $end_date) {
+                contributionCalendar {
+                    totalContributions
+                }
+            }
+        }
+    }'''
+    variables = {'start_date': start_date,'end_date': end_date, 'login': USER_NAME}
+    request = simple_request(graph_commits.__name__, query, variables)
+    return int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
 
 
-#def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del_loc=0):
-#    """
-#    Uses GitHub's GraphQL v4 API to return my total repository, star, or lines of code count.
-#    """
-#    query_count('graph_repos_stars')
-#    query = '''
-#    query ($owner_affiliation: [RepositoryAffiliation], $login: String!, $cursor: String) {
-#        user(login: $login) {
-#            repositories(first: 100, after: $cursor, ownerAffiliations: $owner_affiliation) {
-#                totalCount
-#                edges {
-#                    node {
-#                        ... on Repository {
-#                            nameWithOwner
-#                            stargazers {
-#                                totalCount
-#                            }
-#                        }
-#                    }
-#                }
-#                pageInfo {
-#                    endCursor
-#                    hasNextPage
-#                }
-#            }
-#        }
-#    }'''
-#    variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
-#    request = simple_request(graph_repos_stars.__name__, query, variables)
-#    if request.status_code == 200:
-#        if count_type == 'repos':
-#            return request.json()['data']['user']['repositories']['totalCount']
-#        elif count_type == 'stars':
-#            return stars_counter(request.json()['data']['user']['repositories']['edges'])
+def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del_loc=0):
+    """
+    Uses GitHub's GraphQL v4 API to return my total repository, star, or lines of code count.
+    """
+    query_count('graph_repos_stars')
+    query = '''
+    query ($owner_affiliation: [RepositoryAffiliation], $login: String!, $cursor: String) {
+        user(login: $login) {
+            repositories(first: 100, after: $cursor, ownerAffiliations: $owner_affiliation) {
+                totalCount
+                edges {
+                    node {
+                        ... on Repository {
+                            nameWithOwner
+                            stargazers {
+                                totalCount
+                            }
+                        }
+                    }
+                }
+                pageInfo {
+                    endCursor
+                    hasNextPage
+                }
+            }
+        }
+    }'''
+    variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
+    request = simple_request(graph_repos_stars.__name__, query, variables)
+    if request.status_code == 200:
+        if count_type == 'repos':
+            return request.json()['data']['user']['repositories']['totalCount']
+        elif count_type == 'stars':
+            return stars_counter(request.json()['data']['user']['repositories']['edges'])
 
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
@@ -141,15 +141,15 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
         }
     }'''
     variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
-    #request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS) # I cannot use simple_request(), because I want to save the file before raising Exception
-    #if request.status_code == 200:
-    #    if request.json()['data']['repository']['defaultBranchRef'] != None: # Only count commits if repo isn't empty
-    #        return loc_counter_one_repo(owner, repo_name, data, cache_comment, request.json()['data']['repository']['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
-    #    else: return 0
-    #force_close_file(data, cache_comment) # saves what is currently in the file before this program crashes
-    #if request.status_code == 403:
-    #    raise Exception('Too many requests in a short amount of time!\nYou\'ve hit the non-documented anti-abuse limit!')
-    #raise Exception('recursive_loc() has failed with a', request.status_code, request.text, QUERY_COUNT)
+    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS) # I cannot use simple_request(), because I want to save the file before raising Exception
+    if request.status_code == 200:
+        if request.json()['data']['repository']['defaultBranchRef'] != None: # Only count commits if repo isn't empty
+            return loc_counter_one_repo(owner, repo_name, data, cache_comment, request.json()['data']['repository']['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
+        else: return 0
+    force_close_file(data, cache_comment) # saves what is currently in the file before this program crashes
+    if request.status_code == 403:
+        raise Exception('Too many requests in a short amount of time!\nYou\'ve hit the non-documented anti-abuse limit!')
+    raise Exception('recursive_loc() has failed with a', request.status_code, request.text, QUERY_COUNT)
 
 
 def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits):
@@ -165,7 +165,7 @@ def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, additio
 
     if history['edges'] == [] or not history['pageInfo']['hasNextPage']:
         return addition_total, deletion_total, my_commits
-    else: return null #recursive_loc(owner, repo_name, data, cache_comment, addition_total, deletion_total, my_commits, history['pageInfo']['endCursor'])
+    else: return recursive_loc(owner, repo_name, data, cache_comment, addition_total, deletion_total, my_commits, history['pageInfo']['endCursor'])
 
 
 def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None, edges=[]):
@@ -422,46 +422,46 @@ def formatter(query_type, difference, funct_return=False, whitespace=0):
 
 if __name__ == '__main__':
     """
-    As Josvah (AshCript), 2022-2023
+    Andrew Grant (Andrew6rant), 2022-2023
     """
     print('Calculation times:')
     # define global variable for owner ID and calculate user's creation date
-    # e.g {'id': 'MDQ6VXNlcjU3MzMxMTM0'} and 2019-11-03T21:15:07Z for username 'AshCript'
+    # e.g {'id': 'MDQ6VXNlcjU3MzMxMTM0'} and 2019-11-03T21:15:07Z for username 'Andrew6rant'
     user_data, user_time = perf_counter(user_getter, USER_NAME)
     OWNER_ID, acc_date = user_data
     formatter('account data', user_time)
-    age_data, age_time = perf_counter(daily_readme, datetime.datetime(1999, 4, 25))
+    age_data, age_time = perf_counter(daily_readme, datetime.datetime(2002, 7, 5))
     formatter('age calculation', age_time)
     total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     formatter('LOC (cached)', loc_time) if total_loc[-1] else formatter('LOC (no cache)', loc_time)
     commit_data, commit_time = perf_counter(commit_counter, 7)
-    #star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
-    #repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
-    #contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
+    star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
+    repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
+    contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
     follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
 
     # several repositories that I've contributed to have since been deleted.
-    #if OWNER_ID == {'id': 'MDQ6VXNlcjU3MzMxMTM0'}: # only calculate for user Andrew6rant
-    #    archived_data = add_archive()
-    #    for index in range(len(total_loc)-1):
-    #        total_loc[index] += archived_data[index]
-    #    contrib_data += archived_data[-1]
-    #    commit_data += int(archived_data[-2])
+    if OWNER_ID == {'id': 'MDQ6VXNlcjU3MzMxMTM0'}: # only calculate for user Andrew6rant
+        archived_data = add_archive()
+        for index in range(len(total_loc)-1):
+            total_loc[index] += archived_data[index]
+        contrib_data += archived_data[-1]
+        commit_data += int(archived_data[-2])
 
     commit_data = formatter('commit counter', commit_time, commit_data, 7)
-    #star_data = formatter('star counter', star_time, star_data)
-    #repo_data = formatter('my repositories', repo_time, repo_data, 2)
-    #contrib_data = formatter('contributed repos', contrib_time, contrib_data, 2)
+    star_data = formatter('star counter', star_time, star_data)
+    repo_data = formatter('my repositories', repo_time, repo_data, 2)
+    contrib_data = formatter('contributed repos', contrib_time, contrib_data, 2)
     follower_data = formatter('follower counter', follower_time, follower_data, 4)
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
 
-    svg_overwrite('dark_mode.svg', age_data, commit_data, follower_data, total_loc[:-1])
-    svg_overwrite('light_mode.svg', age_data, commit_data, total_loc[:-1])
+    svg_overwrite('dark_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    svg_overwrite('light_mode.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
 
     # move cursor to override 'Calculation times:' with 'Total function time:' and the total function time, then move cursor back
     print('\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F',
-        '{:<21}'.format('Total function time:'), '{:>11}'.format('%.4f' % (user_time + age_time + commit_time)),
+        '{:<21}'.format('Total function time:'), '{:>11}'.format('%.4f' % (user_time + age_time + loc_time + commit_time + star_time + repo_time + contrib_time)),
         ' s \033[E\033[E\033[E\033[E\033[E\033[E\033[E\033[E', sep='')
 
     print('Total GitHub GraphQL API calls:', '{:>3}'.format(sum(QUERY_COUNT.values())))
