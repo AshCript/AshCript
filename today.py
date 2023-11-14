@@ -371,7 +371,7 @@ def user_getter(username):
     }'''
     variables = {'login': username}
     request = simple_request(user_getter.__name__, query, variables)
-    return {'id': request.json()['data']['user']['id']}, request.json()['data']['user']['createdAt']
+    return {'id': request.json()['data']['user']['id'], 'createdAt' : request.json()['data']['user']['createdAt']}
 
 def follower_getter(username):
     """
