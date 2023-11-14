@@ -8,7 +8,7 @@ import hashlib
 
 # Personal access token with permissions: read:enterprise, read:org, read:repo_hook, read:user, repo
 HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-USER_NAME = os.environ['USER_NAME'] # 'Andrew6rant'
+USER_NAME = os.environ['USER_NAME'] # 'AshCript'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
@@ -44,7 +44,7 @@ def simple_request(func_name, query, variables):
     request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS)
     if request.status_code == 200:
         return request
-    raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
+    #raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
 
 
 def graph_commits(start_date, end_date):
