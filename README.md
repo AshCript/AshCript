@@ -206,4 +206,4 @@
 <div>
     <img src="https://visitcount.itsvg.in/api?id=AshCript&icon=0&color=1"/>
 </div>
-<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ashcript&background=ffb769&style=flat" alt="ashcript" /></p>
+<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ashcript&theme=black-ice&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="ashcript" /></p>
