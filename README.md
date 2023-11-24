@@ -53,6 +53,19 @@
 
 <details open>
     <summary>
+        <b>🏆 Trophies.</b>
+        <img src="assets/animated-flame-01.gif" width="1.75%" align="right"/>
+    </summary>
+    <img src="assets/borderseparator.gif"/>
+    <br/>
+    <br/>
+    
+</details>
+
+<br/>
+
+<details open>
+    <summary>
         <b>📈stats.</b>
         <img src="assets/animated-flame-01.gif" width="1.75%" align="right"/>
     </summary>
@@ -61,10 +74,11 @@
     <br/>
     <div align="center">
         <a href="#">
+            <img src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=AshCript&theme=dark&hide_border=true&no-bg=true&no-frame=true&langs_count=10" width="25%"/>
             <picture>
                 <source media="(prefers-color-scheme: dark)" srcset="https://github.com/AshCript/AshCript/blob/main/profile-3d-contrib/profile-night-rainbow.svg" />
                 <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" />
-                <img alt="AshCript-github-stat" src="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" width="100%"/>
+                <img alt="AshCript-github-stat" src="https://raw.githubusercontent.com/AshCript/AshCript/master/profile-3d-contrib/profile-south-season-animate.svg" width="61%"/>
             </picture>
         </a>
     </div>
