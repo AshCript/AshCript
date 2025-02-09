@@ -10,7 +10,6 @@
     <div/>
     <img src="assets/borderseparator.gif"/>
 </h3>
-
 <br/>
 
 <picture>
@@ -18,7 +17,9 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AshCript/AshCript/output/github-contribution-grid-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/AshCript/AshCript/output/github-contribution-grid-snake.svg" width="100%"/>
 </picture>
-
+<div align="center">
+    <img src="https://badge.mediaplus.ma/darkblue/as-rakot?1337Badge=off&UM6P=off"/>
+</div>
 <br/>
 <br/>
 
@@ -88,7 +89,6 @@
 
 
 <br/>
-
 <details open>
     <summary>
         <b>📈Activity Chart.</b>
